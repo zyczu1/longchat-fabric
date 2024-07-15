@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "longchat",
+  "version": "${version}",
+  "name": "LongChat",
+  "description": "Chat commands with unlimited length",
+  "authors": [
+    "zyczu"
+  ],
+  "contact": {
+    "website": "http://minecraft.zyczu.pl/",
+    "repo": "https://github.com/zyczu1/longchat"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/longchat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "pl.zyczu.minecraft.fabric.longchat.LongChat"
+    ]
+  },
+  "mixins": [
+    "longchat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
